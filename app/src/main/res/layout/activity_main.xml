@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thesecondtest.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/bg_02">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.5">
+            <Button
+                android:layout_marginTop="10dp"
+                style="@style/changeButton"
+                android:id="@+id/perText"
+                android:text="个人资料"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/per_text"
+
+                />
+            <Button
+                style="@style/changeButton"
+                android:id="@+id/myShop"
+                android:text="我的小店"
+                android:layout_below="@+id/perText"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/my_shop"
+                />
+            <Button
+                style="@style/changeButton"
+                android:id="@+id/myOrder"
+                android:text="我的订单"
+                android:layout_below="@+id/myShop"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/my_order"
+                />
+            <Button
+                style="@style/changeButton"
+                android:layout_marginTop="10dp"
+                android:id="@+id/myCollect"
+                android:text="我的收藏"
+                android:layout_below="@+id/myOrder"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/my_collect"
+                />
+            <Button
+                style="@style/changeButton"
+                android:id="@+id/setting"
+                android:text="设置"
+                android:layout_below="@+id/myCollect"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/setting"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/firstPage"
+                    style="@style/bottomButton"
+                    android:drawableTop="@drawable/logo_1"
+                    android:text="首页" />
+
+                <Button
+                    android:id="@+id/paiMai"
+                    style="@style/bottomButton"
+                    android:layout_toRightOf="@+id/firstPage"
+                    android:drawableTop="@drawable/logo_2"
+                    android:text="拍卖" />
+
+                <Button
+                    android:id="@+id/message"
+                    style="@style/bottomButton"
+                    android:layout_toRightOf="@id/paiMai"
+                    android:drawableTop="@drawable/logo_3"
+                    android:text="信息" />
+
+                <Button
+                    android:id="@+id/mine"
+                    style="@style/bottomButton"
+                    android:layout_toRightOf="@id/message"
+                    android:drawableTop="@drawable/logo_4"
+                    android:text="我的" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
