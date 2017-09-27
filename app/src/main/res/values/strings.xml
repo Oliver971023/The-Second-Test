@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">The Second Test</string>
+    <string name="idname">大脸猫</string>
+    <string name="geqian">大脸猫大脸猫爱吃鱼，这是一条很有个性的个性签名</string>
+    <string name="perText">个人资料</string>
+    <string name="myShop">我的小店</string>
+    <string name="myOrder">我的订单</string>
+    <string name="myCollect">我的收藏</string>
+    <string name="setting">设置</string>
+    <string name="firstPage">首页</string>
+    <string name="paimai">拍卖</string>
+    <string name="message">信息</string>
+    <string name="mine">我的</string>
 </resources>

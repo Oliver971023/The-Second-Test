@@ -15,7 +15,39 @@
             android:layout_height="0dp"
             android:layout_weight="4"
             android:background="@drawable/bg_02">
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/tou_xiang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/touxiang"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/textChange"
+                        android:layout_marginTop="40dp"
+                        android:textSize="25dp"
+                        android:text="@string/idname" />
+                    <TextView
+                        style="@style/textChange"
+                        android:id="@+id/ge_qian1"
+                        android:layout_gravity="center"
+                        android:text="@string/geqian"/>
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -26,15 +58,14 @@
                 android:layout_marginTop="10dp"
                 style="@style/changeButton"
                 android:id="@+id/perText"
-                android:text="个人资料"
+                android:text="@string/perText"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/per_text"
-
                 />
             <Button
                 style="@style/changeButton"
                 android:id="@+id/myShop"
-                android:text="我的小店"
+                android:text="@string/myShop"
                 android:layout_below="@+id/perText"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/my_shop"
@@ -42,7 +73,7 @@
             <Button
                 style="@style/changeButton"
                 android:id="@+id/myOrder"
-                android:text="我的订单"
+                android:text="@string/myOrder"
                 android:layout_below="@+id/myShop"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/my_order"
@@ -51,7 +82,7 @@
                 style="@style/changeButton"
                 android:layout_marginTop="10dp"
                 android:id="@+id/myCollect"
-                android:text="我的收藏"
+                android:text="@string/myCollect"
                 android:layout_below="@+id/myOrder"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/my_collect"
@@ -59,7 +90,7 @@
             <Button
                 style="@style/changeButton"
                 android:id="@+id/setting"
-                android:text="设置"
+                android:text="@string/setting"
                 android:layout_below="@+id/myCollect"
                 android:drawablePadding="10dp"
                 android:drawableLeft="@drawable/setting"
@@ -80,28 +111,28 @@
                     android:id="@+id/firstPage"
                     style="@style/bottomButton"
                     android:drawableTop="@drawable/logo_1"
-                    android:text="首页" />
+                    android:text="@string/firstPage" />
 
                 <Button
                     android:id="@+id/paiMai"
                     style="@style/bottomButton"
                     android:layout_toRightOf="@+id/firstPage"
                     android:drawableTop="@drawable/logo_2"
-                    android:text="拍卖" />
+                    android:text="@string/paimai" />
 
                 <Button
                     android:id="@+id/message"
                     style="@style/bottomButton"
                     android:layout_toRightOf="@id/paiMai"
                     android:drawableTop="@drawable/logo_3"
-                    android:text="信息" />
+                    android:text="@string/message" />
 
                 <Button
                     android:id="@+id/mine"
                     style="@style/bottomButton"
                     android:layout_toRightOf="@id/message"
                     android:drawableTop="@drawable/logo_4"
-                    android:text="我的" />
+                    android:text="@string/mine" />
             </LinearLayout>
 
         </RelativeLayout>
